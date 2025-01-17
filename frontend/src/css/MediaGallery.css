@@ -1,0 +1,76 @@
+/* General styles for the gallery container */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for each media card */
+  .border {
+    border: 1px solid #e2e8f0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Inner padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    background-color: #ffffff;
+  }
+  
+  /* Hover effect for media cards */
+  .border:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+    transform: translateY(-4px); /* Lift effect */
+  }
+  
+  /* Styles for images */
+  img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* Styles for videos */
+  video {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* Styles for PDF and DOCX links */
+  .text-blue-500 {
+    color: #4299e1; /* Blue color for PDF links */
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .text-blue-500:hover {
+    color: #2b6cb0; /* Darker blue on hover */
+  }
+  
+  .text-green-500 {
+    color: #48bb78; /* Green color for DOCX links */
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .text-green-500:hover {
+    color: #2f855a; /* Darker green on hover */
+  }
+  
+  /* Unsupported file type message */
+  .text-red-500 {
+    color: #e53e3e; /* Red color for unsupported file type message */
+    font-weight: bold;
+  }
+  
+  /* No media uploaded message */
+  .text-gray-600 {
+    color: #718096; /* Gray color */
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
